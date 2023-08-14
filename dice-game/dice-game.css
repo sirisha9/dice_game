@@ -1,0 +1,131 @@
+:root {
+    --font-family: 'calibri';
+    --fontSize-head: 18px;
+    --fontSize-para: 14px;
+    --color: yellow;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+body {
+    width: 100%;
+   background: lightpink;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.game-name {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+    gap: 40px;
+}
+.game-name h1{
+    margin-top: 25px;
+}
+
+.game-name img {
+    
+    width: 15%;
+    margin-top: auto;
+}
+
+.container {
+    text-align: center;
+    margin: 13px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.container img {
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px grey;
+}
+
+.container p {
+    padding: 20px 0;
+    font-size: larger;
+    font-weight: 600;
+}
+
+.winner,
+.play-again {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.winner p {
+    width: 12rem;
+    padding: 20px 30px;
+    border: 3px rgb(228, 228, 228) dotted;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: 700;
+    color: #fff;
+}
+
+.play-again p {
+    background-color: greenyellow;
+    padding: 20px 30px;
+    width: 12rem;
+    border-color: grey;
+    border-style: solid;
+    border-left: 10px;
+    border-top: 30px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.play-again p:hover {
+    background-color: rgb(153, 255, 0);
+}
+
+@media only screen and(max-width : 500px) {
+    .winner p {
+        width: 90%;
+        font-size: medium;
+        padding: 15px;
+        margin: 30px 0;
+    }
+
+    .play-again p {
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    .container img {
+        width: 150px;
+    }
+
+    .winner,
+    .play-again {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+}
+
+@media only screen and(max-width:400px) {
+    .winner p {
+        width: 100%;
+        font-size: medium;
+    }
+}
